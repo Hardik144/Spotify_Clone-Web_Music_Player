@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="logo flex">
+            <img class="spotifylogo" src="images/image.png" alt="spotify">
+            <img class="icon" id="left-home" src="images/home.svg" alt="home">
+            <img class="icon" id="left-search" src="images/search.svg" alt="">
+        </div> 
+        <div class="home-search flex">
+            <div class="home bg-black">
+                <img class="icon" src="images/home.svg" alt="home">
+            </div>
+            <div class="search flex bg-black">
+                <div class="search-logo"><img class="icon" src="images/search.svg" alt=""></div>
+                <input class="search-text bg-black" placeholder="What do yoy want to play?" type="search">
+                <div class="browse-logo"><img class="icon"src="images/browse.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="log flex">
+            <div class="only-login">Login</div>
+            <div class="signup">Sign up</div>
+            <div class="login">Log in</div>
+        </div>
+    </header>
+    <main class="main flex">
+        <div class="left bg-black">
+            <div class="library-section flex">
+                <div class="logo-library">
+                    <div class="playlist-logo"><img class="icon" src="images/playlist.svg" alt="playlist"></div>
+                    <div class="library">Your Library</div>
+                </div>
+                <div class="cross-logo"><img class="icon" src="images/cross.svg" alt=""></div>
+            </div>
+            <div class="songplayed">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="lines">
+                    <div class="line1 flex">
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy Center</a>
+                        <a href="">Privacy Policy</a>
+                        <!-- <a href="">Cookies</a> -->
+                        <a href="">AboutAds</a>
+                        <a href="">Accessibility</a>
+                    </div>
+                    <div class="line2">
+                        <a href="">Cookies</a>
+                    </div>
+                </div>
+                <div class="language flex"><img class="icon" src="images/earth.svg" alt="">Language</div>
+            </div>
+        </div>
+        <div class="right bg-black">
+            <div class="right-header flex">
+                <div class="ham-play flex">
+                    <img class="hamburger" src="images/hamburger.svg" alt="">
+                    <h2>Spotify Playlist</h2>
+                </div>
+                <!-- <div class="showAll">Show all</div> -->
+            </div>
+            <div class="card-contain"> </div>
+        </div>
+        <div class="down">
+            <div class="songbutton">
+                <div class="songinfo"></div>
+                <div class="actualbutton">
+                    <img id="previous" src="images/prev.svg" alt="">
+                    <img id="play" src="images/play.svg" alt="">
+                    <img id="next" src="images/next.svg" alt="">
+                </div>
+                <div class="timevol">
+                    <div class="songtime"></div>
+                    <div class="volume">
+                        <img id="volicon1" src="images/volume1.svg" alt="">
+                        <img id="volicon2" src="images/volume2.svg" alt="">
+                        <img id="volicon3" src="images/volume3.svg" alt="">
+                        <img id="muticon" src="images/mute.svg" alt="">
+                        <div class="range">
+                            <input type="range" name="volume" id="volumebar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </main>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
