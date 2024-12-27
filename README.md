@@ -111,7 +111,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 <br>
 
 ## 🌐 Live Demo  
-[Click here](https://Hardik144.github.io/spotify-clone/) to experience the Spotify Clone!  
+[Click here](https://spotify-webplayer.freewebhostmost.com/) to experience the Spotify Clone!  
 
 <br>
 
