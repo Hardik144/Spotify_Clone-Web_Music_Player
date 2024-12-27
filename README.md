@@ -7,7 +7,7 @@ A simple, responsive web-based music player inspired by Spotify. Built using **H
 - **Responsive Design**: Optimized for various screen sizes (desktop, tablet, and mobile).  
 - **No Backend**: Songs are managed through structured folders and metadata in `info.json` files.  
 - **Customizable**: Organize music by creating folders based on your favorite genres or themes.  
-- **Dynamic Song List**: Automatically fetches and displays songs with their titles and descriptions.  
+- **Dynamic Song List**: Automatically fetches and displays songs with their titles, descriptions and album art.  
 - **Interactive UI**: User-friendly interface with play, pause, next, previous, and seek functionalities.  
 
 <br>
@@ -29,7 +29,11 @@ A simple, responsive web-based music player inspired by Spotify. Built using **H
    - Create subfolders based on your music taste (e.g., `Pop`, `Rock`, `Romantic`).  
    - Inside each subfolder, add `.mp3` files.  
 
-3. **Create Metadata**  
+3. **Add Album Art**
+   - Add an album.jpg image in each genre folder.
+   - This image will be displayed on the web player as the album cover for the genre.
+     
+4. **Create Metadata**  
    - Inside each subfolder, create an `info.json` file to include song metadata.  
    - Example `info.json` structure:  
      ```json   
@@ -39,7 +43,7 @@ A simple, responsive web-based music player inspired by Spotify. Built using **H
        } 
      ```  
 
-4. **Open the Player**  
+5. **Open the Player**  
    - Launch the `index.html` file in your browser to start enjoying your music!  
 
 <br>
@@ -49,23 +53,26 @@ A simple, responsive web-based music player inspired by Spotify. Built using **H
 ``` 
 spotify-clone/  
 │  
-├── CSS/  
+├── css/  
 │   ├── style.css        # Main stylesheet for the player  
 │   └── responsive.css   # Stylesheet for responsive design  
-├── Javascript/  
+├── js/  
 │   └── script.js        # JavaScript logic for the player  
 ├── songs/  
 │   ├── Pop/  
 │   │   ├── song1.mp3  
 │   │   ├── song2.mp3  
+│   │   ├── album.jpg     # Album art for the Pop genre  
 │   │   └── info.json     # Metadata for the Pop genre  
 │   ├── Best/  
 │   │   ├── song1.mp3  
 │   │   ├── song2.mp3  
+│   │   ├── album.jpg     # Album art for the Rock genre  
 │   │   └── info.json     # Metadata for the Rock genre  
 │   └── Chill/  
 │       ├── song1.mp3  
 │       ├── song2.mp3  
+│       ├── album.jpg     # Album art for the Romantic genre  
 │       └── info.json     # Metadata for the Romantic genre  
 ├── images/              # Folder containing all images for the player  
 │   ├── logo.png  
@@ -74,6 +81,7 @@ spotify-clone/
 ├── favicon.ico          # Favicon for the website (Spotify logo)  
 ├── index.html           # Main entry point of the player  
 └── README.md            # Project documentation  
+ 
   
 ```  
 
